@@ -1,10 +1,9 @@
 class StaticPublicController < ApplicationController
-  def landing_page
-  end
+  skip_before_action :authenticate_user!, only: %i[landing_page privacy]
 
-  def privacy
-  end
+  def landing_page; end
 
-  def terms
-  end
+  def privacy; end
+
+  def terms; end
 end
