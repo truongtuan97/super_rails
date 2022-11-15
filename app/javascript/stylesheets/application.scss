@@ -1,7 +1,21 @@
 @import "bootstrap";
 
-body {
-  background-color: antiquewhite;
-}
+// body {
+//   background-color: antiquewhite;
+// }
 
 a { text-decoration: none; }
+
+html {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
