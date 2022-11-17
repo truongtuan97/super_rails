@@ -3,7 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers: [:google_oauth2, :github]
+         :trackable,
+         :omniauthable, omniauth_providers: %i[google_oauth2 github]
 
   def self.from_omniauth(access_token)
     user = User.where(email: access_token.info.email).first
@@ -28,5 +29,4 @@ class User < ApplicationRecord
       email
     end
   end
-
 end
