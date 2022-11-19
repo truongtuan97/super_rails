@@ -44,6 +44,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem "letter_opener"
+  gem 'faker', '~> 1.6', '>= 1.6.6'
 end
 
 group :test do
@@ -61,3 +62,4 @@ gem 'devise'
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem 'pagy', '~> 5.10'
