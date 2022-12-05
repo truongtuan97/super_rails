@@ -9,6 +9,11 @@
 <%= sort_link(@q, :created_at) do %>
   <strong>Created</strong>
 <% end %>
+-
+<%= sort_link(@q, :posts_count, defaul_order: :desc) do %>
+  <strong>Posts counter</strong>
+<% end %>
+
 
 <%= search_form_for @q do |f| %>
   <%= f.label :email_cont %>
@@ -17,6 +22,7 @@
   <%= f.submit %>
 <% end %>
 
+<hr>
 <% @users.each do |user| %>
   <%= render "users/user", user: user %>
   <br>

@@ -19,3 +19,6 @@
 <%= "#{'created_at'.humanize}: #{user.created_at.strftime('%d %b %Y')}" %>
 <br>
 <%= "#{'invitess'.humanize}: #{user.invitees.count}" %>
+<br>
+<%= "#{'posts'.humanize}: " %> <%= user.posts_count %>
+<hr>
