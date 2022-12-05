@@ -18,6 +18,12 @@
             <div class="fa fa-users"></div>
             Users
           <% end %>
+
+          <%= deep_active_link_to new_user_invitation_path do %>          
+            <div class="fa fa-user-plus"></div>
+            Invite a friend
+          <% end %>
+
         <% end %>                
       </ul>
       <ul class="navbar-nav ms-auto">

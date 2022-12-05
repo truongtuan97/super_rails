@@ -64,3 +64,4 @@ gem "omniauth-rails_csrf_protection"
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 gem 'pagy', '~> 5.10'
 gem 'ransack'
+gem 'devise_invitable', '~> 2.0.0'

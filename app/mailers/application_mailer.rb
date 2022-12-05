@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@super-rails-tt.herokuapp.com'
+  default from: 'no-reply@super-rails.local'
   layout 'mailer'
 end
